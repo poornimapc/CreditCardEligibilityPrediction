@@ -3,3 +3,6 @@ pandas
 streamlit
 scikit-learn
 numpy
+sleep
+category_encoders
+base64
