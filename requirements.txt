@@ -4,4 +4,3 @@ streamlit
 scikit-learn
 numpy
 category_encoders
-base64
