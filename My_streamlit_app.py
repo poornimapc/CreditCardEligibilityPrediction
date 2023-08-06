@@ -215,8 +215,7 @@ def main():
                            df2 = pd.read_csv("formData.csv")
 			   df_new_app_data = pd.concat([df1, df2], ignore_index=True)  
                            # df_new_app_data = df1.append(df2)
-                           df_new_app_data.to_csv('formDatawithallcolumns.csv')
-
+			   df_new_app_data.to_csv('formDatawithallcolumns.csv')
                            
  #------------------- Form Data End -------------------------------------------
                       if task == "PREDICTION FOR APPLICATION":
