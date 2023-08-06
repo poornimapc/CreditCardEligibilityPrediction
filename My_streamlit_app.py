@@ -2,7 +2,7 @@
 """
 Created on Tue Jul 13 20:01:43 2021
 
-@author: DELL
+@author: Poornima Peiris
 """
 import joblib  
 import streamlit as st
@@ -12,13 +12,6 @@ from time import sleep
 import matplotlib.pyplot as plt
 import base64
 
-
-# Runing streamlit. Go t anaconda prompt
-# Cmd go to directory
-# cd D:\STUDY\Master_Business Analytics\BA 3007 Project\New CreditCard Eligibility Project V5_Automated
-# d:
-# streamlit run 08_MyFinalApp.py           
-# Security
 
 import hashlib
 def make_hashes(password):
@@ -98,9 +91,6 @@ def main():
                           
                           # Load the model
                           nlsvm_model = joblib.load("nonlinarsvm_trained-model.pkl")
-
-                          
-                          
          
                           with st.form(key='form1'):
 
