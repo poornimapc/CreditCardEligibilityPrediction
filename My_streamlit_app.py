@@ -334,6 +334,7 @@ def main():
                           df_out ['PREDICTION'] = df_out['PREDICTION'].values.astype(str)
                           df_out.to_csv('df_out.csv')
                           df_out2 = df_out.tail(1)
+			  df_out2.PREDICTION.fillna(0,inplace=True)    
                           df_out2_withouttranspose = df_out.tail(1)
 
                           def flag_goodbad(df_out2):
