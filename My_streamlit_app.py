@@ -83,7 +83,7 @@ def main():
 				   username = st.sidebar.text_input("User Name")
 				   password = st.sidebar.text_input("Password",type='password')
 				   if st.sidebar.checkbox("Login"):
-					  # word == '12345':
+					# word == '12345':
 					create_usertable()
 					hashed_pswd = make_hashes(password)
 					result = login_user(username,check_hashes(password,hashed_pswd))
