@@ -376,8 +376,7 @@ def main():
                           
                           #--------------------------------------- Vizualization
                                                     # Class Label in Graphical reprsentation
-                          #labels = 'PROBABLE_GOOD_CUSTOMER', 'PROBABLE_BAD_CUSTOMER'
-                          df_out2 ['PREDICTION'] = df_out2['PREDICTION'].values.astype(int)
+                          labels = 'PROBABLE_GOOD_CUSTOMER', 'PROBABLE_BAD_CUSTOMER'
                           sizes = [df_out2_withouttranspose.PREDICTION[df_out2_withouttranspose['PREDICTION']=='PROBABLE_GOOD_CUSTOMER'].count(), 
                                    df_out2_withouttranspose.PREDICTION[df_out2_withouttranspose['PREDICTION']=='PROBABLE_BAD_CUSTOMER'].count()]
                           fig1, ax1 = plt.subplots(figsize=(2, 1))
