@@ -335,7 +335,7 @@ def main():
                           df_out.to_csv('df_out.csv')
                           df_out2 = df_out.tail(1)
                           df_out2_withouttranspose = df_out.tail(1)
-                          df_out2 ['PREDICTION'] = df_out['PREDICTION'].values.astype(int)
+                          df_out['PREDICTION'].values.astype(int)
 
                           def flag_goodbad(df_out2):
                             if (df_out2['PREDICTION'] == '1') :
