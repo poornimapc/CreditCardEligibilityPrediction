@@ -374,18 +374,6 @@ def main():
                            return href
                            st.markdown(get_table_download_link_csv(final_out), unsafe_allow_html=True)
                           
-                          #--------------------------------------- Vizualization
-                                                    # Class Label in Graphical reprsentation
-                          #labels = 'PROBABLE_GOOD_CUSTOMER', 'PROBABLE_BAD_CUSTOMER'
-                          #sizes = [df_out2_withouttranspose.PREDICTION[df_out2_withouttranspose['PREDICTION']=='PROBABLE_GOOD_CUSTOMER'].count(), 
-                          #         df_out2_withouttranspose.PREDICTION[df_out2_withouttranspose['PREDICTION']=='PROBABLE_BAD_CUSTOMER'].count()]
-                          #fig1, ax1 = plt.subplots(figsize=(2, 1))
-                          #ax1.pie(sizes, labels=labels, colors = ['#76ff76','#ff2812'],  startangle=90)
-                          #ax1.pie(sizes,  colors = ['#76ff76','#ff2812'],  startangle=90)
-                          #ax1.axis('equal')
-                          #plt.title("Customer Eligibility Indicator", size = 10)
-                          #st.pyplot(fig1)
-
 #----=======================================================================================
                           
                       if task == "BULK PREDICTION":
