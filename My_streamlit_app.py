@@ -13,13 +13,6 @@ import matplotlib.pyplot as plt
 import base64
 
 
-# Runing streamlit. Go t anaconda prompt
-# Cmd go to directory
-# cd D:\STUDY\Master_Business Analytics\BA 3007 Project\New CreditCard Eligibility Project V5_Automated
-# d:
-# streamlit run 08_MyFinalApp.py           
-# Security
-
 import hashlib
 def make_hashes(password):
     return hashlib.sha256(str.encode(password)).hexdigest()
@@ -60,12 +53,12 @@ def main():
        st.subheader("Home")
        st.image(
             "https://apositiveindian.files.wordpress.com/2020/12/1569653930-credit_card.jpg",
-            width=400, # Manually Adjust the width of the image as per requirement
+            width=300, # Manually Adjust the width of the image as per requirement
              )
        st.title("Credit Card Approval Prediction System")
-       new_title2 = '<p style="font-family:sans-serif; color:purple; font-size: 14px;">Poornima Peiris | Reg No. 2018/BA/026 | Ind No. 18880269     </p>'
+       new_title2 = '<p style="font-family:sans-serif; color:purple; font-size: 12px;">Poornima Peiris </p>'
        st.markdown(new_title2, unsafe_allow_html=True)
-       new_title3 = '<p style="font-family:sans-serif; color:purple; font-size: 14px;">Master in Business Analytics | University of Colombo School of Computing </p>'
+       new_title3 = '<p style="font-family:sans-serif; color:purple; font-size: 14px;">A Project of Master in Business Analytics | UCSC </p>'
        st.markdown(new_title3, unsafe_allow_html=True)
        
        st.image(
