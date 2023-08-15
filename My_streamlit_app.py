@@ -2,7 +2,7 @@
 """
 Created on Tue Jul 13 20:01:43 2021
 
-@author: DELL
+@author: Poornima Peiris
 """
 import joblib  
 import streamlit as st
@@ -56,9 +56,9 @@ def main():
             width=300, # Manually Adjust the width of the image as per requirement
              )
        st.title("Credit Card Approval Prediction System")
-       new_title2 = '<p style="font-family:sans-serif; color:purple; font-size: 12px;">Poornima Peiris </p>'
+       new_title2 = '<p style="font-family:sans-serif; color:purple; font-size: 12px;">Project Owner - Poornima Peiris </p>'
        st.markdown(new_title2, unsafe_allow_html=True)
-       new_title3 = '<p style="font-family:sans-serif; color:purple; font-size: 14px;">A Project of Master in Business Analytics | UCSC </p>'
+       new_title3 = '<p style="font-family:sans-serif; color:purple; font-size: 14px;">A Project from the Master in Business Analytics Program | UCSC </p>'
        st.markdown(new_title3, unsafe_allow_html=True)
        
        st.image(
