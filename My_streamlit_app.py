@@ -105,7 +105,7 @@ def main():
                           with st.form(key='form1'):
 
 # radio button to choose gender format
-                           ID = st.number_input("NIC")
+                           ID = st.number_input("ID CARD NO")
 # TAKE Gender INPUT
 # radio button to choose gender format
                            CODE_GENDER = st.radio("Customer Gender - (Male - M, Female - F)", options=['M', 'F'])
@@ -275,9 +275,9 @@ def main():
                           str_cols= ['NAME_INCOME_TYPE','NAME_FAMILY_STATUS','NAME_HOUSING_TYPE','OCCUPATION_TYPE']
                           application_record = pd.get_dummies(application_record, columns=str_cols, dtype=int)
                           import category_encoders as ce
-                  #Create object for binary encoding
+                  # Create object for binary encoding
                           encoder= ce.BinaryEncoder(cols=['CODE_GENDER','FLAG_OWN_CAR','FLAG_OWN_REALTY','FLAG_WORK_PHONE', 'FLAG_PHONE', 'FLAG_EMAIL'],return_df=True)
-                  #Fit and Transform Data 
+                  # Fit and Transform Data 
                           application_record=encoder.fit_transform(application_record) 
                   #     Ordinal Variables Label Encoding_Features - NAME_EDUCATION_TYPE__________________________
                           encoder= ce.OrdinalEncoder(cols=['NAME_EDUCATION_TYPE'],return_df=True,
@@ -308,7 +308,6 @@ def main():
                    
                           st.subheader("Step 2 : Prediction Started - Application of Nonlinear SVM ....") 
                         #---------------------------------------Progress Bar
-                            #---------------------------------------Progress Bar
                           st.markdown("""
                          <style>
                          .stProgress.st-bo {
@@ -352,7 +351,7 @@ def main():
                             #---------------------------------------Progress Bar
                  
                           def highlight_bad(value):
-                              color = "red" if value == 'PROBABLE_BAD_CUSTOMER' else "yellow"
+                              color = "red" if value == 'PROBABLE_BAD_CUSTOMER' else "lawngreen"
                               return "background-color: %s" % color
                           
                             # traspose table issue handle by export to csv and reimport as data frame.
